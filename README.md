@@ -42,10 +42,6 @@ mlp-surf/
 
 확정 완료: GOAT 링크는 고트펍 전용 네이버 플레이스(place/2024397536)로 연결됨 (2026-08-26).
 
-## 관련 프로젝트
-
-- [Wavetone Studio](https://sungju3115.github.io/wavetone_studio/) — 웨이브톤 스튜디오 홈페이지 ([repo](https://github.com/sungju3115/wavetone_studio))
-
 ## 참고 사항
 
 - 데스크톱(1440px) 우선. 모바일 반응형 미적용 — 개발 시 브레이크포인트 추가 필요.
@@ -53,3 +49,7 @@ mlp-surf/
 - 지도는 구글맵 임베드(무키). 네이버 예약 버튼은 플레이스 검색 링크 — 예약 전용 링크 확보 시 교체 권장.
 - 대형 PNG 이미지가 일부 있음(GOAT·시설, 2~4MB) — 배포 전 WebP/JPG 변환 권장.
 - 렌탈 가격은 실운영 기준 반영(2026-07 기준): 소프트탑 25,000 / 에폭시·PU 40,000 / SUP 40,000 / 하계 3mm 15,000 / 동계 5mm 20,000 (종일 기준).
+
+## Link
+- 웹 사이트 링크 (https://sungju3115.github.io/mlp_surf/)
+- 만리포(https://map.naver.com/p/search/MLP%20SURF?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202608271241%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3DMLP%20SURF)
