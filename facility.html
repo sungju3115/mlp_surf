@@ -26,7 +26,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--font-b);color:var(--ink);background:var(--white);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--font-b);color:var(--ink);background:var(--white);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 a{color:inherit;text-decoration:none;transition:.3s}
 ul{list-style:none}
 section{position:relative}
@@ -368,6 +368,13 @@ html.js .d1{transition-delay:.1s}
   function onScroll(){h.classList.toggle('scrolled',window.scrollY>10);}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 })();
+
+// ===== 복사·우클릭·드래그 방지 =====
+document.addEventListener('copy',function(e){e.preventDefault();});
+document.addEventListener('cut',function(e){e.preventDefault();});
+document.addEventListener('contextmenu',function(e){e.preventDefault();});
+document.addEventListener('dragstart',function(e){e.preventDefault();});
+document.addEventListener('selectstart',function(e){e.preventDefault();});
 </script>
 </body>
 </html>

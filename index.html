@@ -765,6 +765,13 @@ html.js .d3{transition-delay:.3s}
   function onScroll(){h.classList.toggle('scrolled',window.scrollY>10);}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 })();
+
+// ===== 복사·우클릭·드래그 방지 =====
+document.addEventListener('copy',function(e){e.preventDefault();});
+document.addEventListener('cut',function(e){e.preventDefault();});
+document.addEventListener('contextmenu',function(e){e.preventDefault();});
+document.addEventListener('dragstart',function(e){e.preventDefault();});
+document.addEventListener('selectstart',function(e){e.preventDefault();});
 </script>
 </body>
 </html>
