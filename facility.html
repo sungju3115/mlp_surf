@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시설 — MLP SURF</title>
+<meta name="description" content="MLP SURF 시설 안내 — 샤워실, 탈의실, 서핑장비, 휴식공간, 그리고 휴게음식점 GOAT.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff">
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff">
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff">
+<style>
+@font-face{font-family:'GmarketSans';font-weight:300;font-style:normal;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-display:block}
+@font-face{font-family:'GmarketSans';font-weight:500;font-style:normal;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-display:block}
+@font-face{font-family:'GmarketSans';font-weight:700;font-style:normal;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-display:block}
+
+:root{
+  --navy:#24438f;--navy-2:#1d3a8f;--navy-deep:#0b2456;
+  --aqua:#01b6ed;--yellow:#fbb900;--red:#e30b13;
+  --ink:#2e2e2e;--gray:#6a6a6a;--bg:#f2f2f2;--line:#dcdcdc;--white:#fff;
+  --radius:20px;
+  --font-d:'GmarketSans',sans-serif;
+  --font-b:'Pretendard Variable',Pretendard,'Malgun Gothic',-apple-system,sans-serif;
+  --header-h:72px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:var(--ink);background:var(--white);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none;transition:.3s}
+ul{list-style:none}
+section{position:relative}
+.container{max-width:1200px;margin:0 auto;padding:0 40px;position:relative}
+.dot{position:absolute;border-radius:50%;pointer-events:none}
+.sec{padding:100px 0 120px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:100px;padding:16px 34px 14px;font-family:var(--font-d);font-weight:500;font-size:16px;transition:transform .25s,box-shadow .25s,background .25s,color .25s;cursor:pointer;border:0}
+.btn:hover{transform:translateY(-2px)}
+.btn-aqua{background:var(--aqua);color:#fff}
+.btn-aqua:hover{background:var(--navy);box-shadow:0 12px 26px rgba(36,67,143,.35)}
+.btn-header{padding:11px 24px 9px;font-size:14px}
+
+html.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+html.js .reveal.in{opacity:1;transform:none}
+html.js .d1{transition-delay:.1s}
+
+/* Header */
+.header{position:fixed;inset:0 0 auto;height:var(--header-h);z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.header.scrolled{border-bottom-color:var(--line);box-shadow:0 2px 14px rgba(11,36,86,.08)}
+.header .container{height:100%;display:flex;align-items:center;gap:40px;max-width:1320px}
+.logo{font-family:var(--font-d);font-weight:700;font-size:21px;color:var(--navy);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.logo span{color:var(--aqua)}
+.logo .wave{width:26px;height:26px;flex:none}
+.gnb{display:flex;gap:36px;font-family:var(--font-d);font-weight:500;font-size:15px;color:var(--ink);position:absolute;left:50%;transform:translateX(-50%)}
+.gnb a:hover{color:var(--aqua)}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:14px}
+.addr-chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--gray);cursor:pointer;background:none;border:0;font-family:var(--font-b);transition:color .2s}
+.addr-chip:hover{color:var(--aqua)}
+.addr-chip svg{width:16px;height:16px;flex:none}
+
+/* Page hero (통일 규격) */
+.page-hero{margin-top:var(--header-h);background:linear-gradient(120deg,var(--navy-deep) 0%,var(--navy) 55%,#0186c2 100%);color:#fff;padding:100px 0 90px;overflow:hidden;position:relative}
+.page-hero .dot.a{width:120px;height:120px;background:var(--aqua);opacity:.5;top:-30px;right:14%}
+.page-hero .dot.y{width:44px;height:44px;background:var(--yellow);bottom:60px;right:8%}
+.page-hero .dot.r{width:20px;height:20px;background:var(--red);top:70px;right:26%}
+.page-hero .dot.w{width:28px;height:28px;background:#fff;opacity:.6;bottom:40px;left:10%}
+.ph-eyebrow{font-family:var(--font-d);font-weight:500;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua)}
+.page-hero h1{font-family:var(--font-d);font-weight:300;font-size:52px;line-height:1.25;margin-top:16px}
+.page-hero h1 b{font-weight:700}
+.page-hero h1 .aqua{color:var(--aqua)}
+.page-hero .lead{font-size:17px;color:rgba(255,255,255,.8);margin-top:20px;max-width:none;white-space:nowrap}
+
+/* 시설 카드 */
+.fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.fac-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
+.fac-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(11,36,86,.1);border-color:transparent}
+.fac-pic{aspect-ratio:16/7;border-bottom:1px solid var(--bg);background-color:var(--bg);background-size:cover;background-position:center}
+.fac-body{display:flex;gap:20px;padding:28px 30px;align-items:flex-start}
+.fac-ic{width:56px;height:56px;border-radius:50%;background:rgba(1,182,237,.12);display:flex;align-items:center;justify-content:center;flex:none}
+.fac-ic svg{width:28px;height:28px;color:var(--aqua)}
+.fac-body h3{font-family:var(--font-d);font-weight:500;font-size:20px;color:var(--ink)}
+.fac-body p{font-size:14.5px;color:var(--gray);margin-top:8px;line-height:1.7}
+
+/* GOAT 스트립 */
+.goat-strip{margin-top:48px;background:#221d1a;border-radius:var(--radius);padding:34px 40px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden}
+.goat-strip::after{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:var(--yellow);opacity:.12;top:-50px;right:-40px}
+.goat-strip .gs-eyebrow{font-family:var(--font-d);font-weight:700;font-size:11px;letter-spacing:.22em;color:var(--yellow)}
+.goat-strip h3{font-family:var(--font-d);font-weight:700;font-size:24px;margin-top:8px}
+.goat-strip p{font-size:14px;color:rgba(255,255,255,.72);margin-top:6px}
+.goat-strip .btn{background:var(--yellow);color:#221d1a;position:relative;z-index:1}
+.goat-strip .btn:hover{background:#fff}
+
+/* 위치 */
+.sec-loc{background:var(--bg);padding:100px 0 120px}
+.loc-title{font-family:var(--font-d);font-weight:300;font-size:44px;letter-spacing:-.02em;line-height:1.3;color:var(--ink)}
+.loc-title b{font-weight:700;color:var(--navy)}
+.loc-title .aqua{color:var(--aqua)}
+.loc-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:stretch;margin-top:56px}
+.loc-info{background:#fff;border-radius:var(--radius);padding:14px 34px;box-shadow:0 6px 24px rgba(11,36,86,.06)}
+.loc-row{display:flex;gap:18px;padding:24px 0;border-bottom:1px solid var(--bg)}
+.loc-row:last-of-type{border-bottom:0}
+.loc-row .ic{width:44px;height:44px;border-radius:50%;background:rgba(1,182,237,.12);display:flex;align-items:center;justify-content:center;flex:none}
+.loc-row .ic svg{width:20px;height:20px;color:var(--aqua)}
+.loc-row .k{font-family:var(--font-d);font-weight:500;font-size:13px;color:var(--gray)}
+.loc-row .v{font-size:16px;font-weight:600;margin-top:4px;line-height:1.6;color:var(--ink)}
+.loc-row .v small{display:block;font-size:13px;font-weight:400;color:var(--gray)}
+.copy-btn{display:inline-flex;align-items:center;margin-left:10px;font-size:12px;font-weight:600;color:#fff;background:var(--aqua);border:0;border-radius:100px;padding:5px 14px;cursor:pointer;font-family:var(--font-b);vertical-align:2px;transition:background .2s}
+.copy-btn:hover{background:var(--navy)}
+.loc-map{border-radius:var(--radius);overflow:hidden;min-height:440px;box-shadow:0 6px 24px rgba(11,36,86,.06)}
+.loc-map iframe{width:100%;height:100%;border:0;display:block}
+
+/* Footer */
+.footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:80px 0 40px;font-size:14px}
+.footer a:hover{color:var(--aqua)}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px}
+.f-brand .f-logo{font-family:var(--font-d);font-weight:700;font-size:22px;color:#fff}
+.f-brand .f-logo span{color:var(--aqua)}
+.f-brand .f-tag{font-family:var(--font-d);font-weight:300;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:8px}
+.f-brand p{margin-top:20px;line-height:1.8}
+.f-col h4{font-family:var(--font-d);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua);margin-bottom:18px}
+.f-col li+li{margin-top:10px}
+.f-goat{margin-top:56px;padding:22px 28px;border:1px solid rgba(255,255,255,.16);border-radius:100px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.f-goat strong{color:#fff;font-family:var(--font-d);font-weight:500}
+.f-goat a{color:var(--aqua);font-weight:600;white-space:nowrap}
+.f-bottom{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,.4)}
+
+.top-btn{position:fixed;right:32px;bottom:32px;z-index:150;width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(11,36,86,.3);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s,transform .3s,background .3s}
+.top-btn.show{opacity:1;pointer-events:auto;transform:none}
+.top-btn:hover{background:var(--aqua)}
+.top-btn svg{width:22px;height:22px}
+
+.dm-btn{position:fixed;right:32px;bottom:96px;z-index:150;width:52px;height:52px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(188,24,136,.35);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s,transform .3s,box-shadow .25s}
+.dm-btn.show{opacity:1;pointer-events:auto;transform:none}
+.dm-btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(188,24,136,.45);color:#fff}
+.dm-btn svg{width:24px;height:24px}
+.kakao-btn{position:fixed;right:32px;bottom:160px;z-index:150;width:52px;height:52px;border-radius:50%;background:#FEE500;color:#3C1E1E;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(60,30,30,.25);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s,transform .3s,box-shadow .25s}
+.kakao-btn.show{opacity:1;pointer-events:auto;transform:none}
+.kakao-btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(60,30,30,.35);color:#3C1E1E}
+.kakao-btn svg{width:26px;height:26px}
+.dm-btn .tip,.kakao-btn .tip{position:absolute;right:64px;top:50%;transform:translateY(-50%) translateX(8px);background:rgba(29,29,31,.92);color:#fff;font-family:var(--font-b);font-size:13px;font-weight:600;white-space:nowrap;padding:9px 16px;border-radius:100px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.dm-btn:hover .tip,.kakao-btn:hover .tip{opacity:1;transform:translateY(-50%) translateX(0)}
+
+.toast{position:fixed;left:50%;bottom:36px;transform:translate(-50%,16px);z-index:200;background:var(--navy);color:#fff;font-size:14px;font-weight:500;padding:13px 26px;border-radius:100px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 10px 30px rgba(11,36,86,.35)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="wave" viewBox="0 0 24 24" fill="none" stroke="#01b6ed" stroke-width="2.2" stroke-linecap="round"><path d="M2 13c2.5-3 5-3 7.5 0s5 3 7.5 0 4-2.5 5-1.5"/><path d="M2 18c2.5-3 5-3 7.5 0s5 3 7.5 0 4-2.5 5-1.5" opacity=".5"/></svg>
+      MLP <span>SURF</span>
+    </a>
+    <nav class="gnb">
+      <a href="about.html">소개</a>
+      <a href="lessons.html">서핑 강습</a>
+      <a href="rental.html">렌탈</a>
+      <a href="facility.html">시설 · 위치</a>
+    </nav>
+    <div class="header-right">
+      <a class="btn btn-aqua btn-header" href="https://map.naver.com/p/search/MLP%20SURF" target="_blank" rel="noopener">통합 예약</a>
+    </div>
+  </div>
+</header>
+
+<!-- Page hero -->
+<div class="page-hero">
+  <span class="dot a"></span><span class="dot y"></span><span class="dot r"></span><span class="dot w"></span>
+  <div class="container">
+    <p class="ph-eyebrow">Facility</p>
+    <h1>서핑을 위한<br><b>기본 <span class="aqua">시설</span></b></h1>
+    <p class="lead">서핑 전후에 필요한 기본 시설을 한곳에서. 강습 준비부터 마무리까지 편하게 머무를 수 있도록 준비했습니다.</p>
+  </div>
+</div>
+
+<!-- 시설 -->
+<section class="sec">
+  <div class="container">
+    <div class="fac-grid">
+      <div class="fac-card reveal">
+        <div class="fac-pic" style="background-image:url('img/fac-1.png')" role="img" aria-label="샤워실"></div>
+        <div class="fac-body">
+          <div class="fac-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div>
+          <div>
+            <h3>샤워실</h3>
+            <p>서핑 후 편하게 정리할 수 있는 샤워시설. 바다에서 나와 바로 이용할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fac-card reveal">
+        <div class="fac-pic" style="background-image:url('img/fac-2.png')" role="img" aria-label="탈의실"></div>
+        <div class="fac-body">
+          <div class="fac-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5a2.5 2.5 0 1 0-2.5 2.5v2"/><path d="M12 9 3.6 15.1A1.6 1.6 0 0 0 4.55 18h14.9a1.6 1.6 0 0 0 .95-2.9L12 9z"/></svg></div>
+          <div>
+            <h3>탈의실</h3>
+            <p>강습 전후 옷을 갈아입을 수 있는 공간. 웻슈트 환복도 여유롭게.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fac-card reveal">
+        <div class="fac-pic" style="background-image:url('img/fac-3.png')" role="img" aria-label="서핑장비"></div>
+        <div class="fac-body">
+          <div class="fac-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c4.2 3.2 6.2 8 6.2 12 0 4.2-2.2 7-6.2 8-4-1-6.2-3.8-6.2-8 0-4 2-8.8 6.2-12z"/><path d="M12 6v12"/><path d="M5.8 14h12.4"/></svg></div>
+          <div>
+            <h3>서핑장비</h3>
+            <p>보드, 슈트 등 서핑에 필요한 장비를 갖추고 있습니다. 렌탈 페이지에서 바로 예약하세요.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fac-card reveal">
+        <div class="fac-pic" style="background-image:url('img/fac-4.png')" role="img" aria-label="휴식공간"></div>
+        <div class="fac-body">
+          <div class="fac-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v2"/><path d="M10 2v2"/><path d="M14 2v2"/></svg></div>
+          <div>
+            <h3>휴식공간</h3>
+            <p>강습 전후 잠시 쉬어갈 수 있는 내부 공간. 바다를 보며 한숨 돌리세요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOAT (시설 내 휴게음식점) -->
+    <div class="goat-strip reveal">
+      <div>
+        <p class="gs-eyebrow">GOAT FOOD SPACE</p>
+        <h3>서핑의 끝은 GOAT에서</h3>
+        <p>만리포 서프 안에 자리한 휴게음식점 — 버거 · 맥주 · 하이볼 · 젤라토</p>
+      </div>
+      <!-- TODO-GOAT: 향후 사업자 분리 시 GOAT 전용 네이버 플레이스 URL로 교체 -->
+      <a class="btn" href="https://map.naver.com/p/search/%EA%B3%A0%ED%8A%B8%ED%8E%8D/place/2024397536?c=15.00,0,0,0,dh&amp;placePath=%3Fbk_query%253D%2525EA%2525B3%2525A0%2525ED%25258A%2525B8%2525ED%25258E%25258D%2526entry%253Dbmp" target="_blank" rel="noopener">네이버 플레이스 ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- 위치 -->
+<section class="sec-loc" id="location">
+  <div class="container">
+    <h2 class="loc-title reveal">만리포 해변에서 <b><span class="aqua">만나요</span></b></h2>
+    <div class="loc-grid">
+      <div class="loc-info reveal">
+        <div class="loc-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <p class="k">주소</p>
+            <p class="v">충청남도 태안군 소원면 만리포2길 172
+              <button class="copy-btn" type="button" data-copy="충청남도 태안군 소원면 만리포2길 172" data-msg="주소가 복사되었습니다">복사</button>
+            </p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <p class="k">운영시간</p>
+            <p class="v">평일 10:00 – 22:00<small>주말 08:00 – 다음 날 02:00</small></p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <p class="k">전화</p>
+            <p class="v">0507-1305-5199
+              <button class="copy-btn" type="button" data-copy="0507-1305-5199" data-msg="전화번호가 복사되었습니다">복사</button>
+            </p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></div>
+          <div>
+            <p class="k">예약방법</p>
+            <p class="v">네이버 예약 또는 전화<small>인스타그램 DM 문의 가능</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="loc-map reveal d1">
+        <iframe title="MLP SURF 위치 지도" src="https://www.google.com/maps?q=%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%ED%83%9C%EC%95%88%EA%B5%B0%20%EC%86%8C%EC%9B%90%EB%A9%B4%20%EB%A7%8C%EB%A6%AC%ED%8F%AC2%EA%B8%B8%20172&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <p class="f-logo">MLP <span>SURF</span></p>
+        <p class="f-tag">Mallipo Local Surf Base</p>
+        <p>충청남도 태안군 소원면 만리포2길 172<br>서핑 강습 · 장비 렌탈 · 시설 안내 · 예약 문의</p>
+      </div>
+      <div class="f-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="lessons.html">서핑 강습</a></li>
+          <li><a href="rental.html">렌탈</a></li>
+          <li><a href="facility.html">시설</a></li>
+          <li><a href="location.html">위치</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://map.naver.com/p/search/MLP%20SURF" target="_blank" rel="noopener">네이버 예약</a></li>
+          <li><a href="https://www.instagram.com/mlpsurf_official" target="_blank" rel="noopener">인스타그램 @mlpsurf_official</a></li>
+          <li><a href="https://cafe.naver.com/mlpsurfing" target="_blank" rel="noopener">네이버 카페</a></li>
+          <li><a href="https://blog.naver.com/mlpsurf172" target="_blank" rel="noopener">블로그</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-goat">
+      <p><strong>GOAT Food Space</strong> — 만리포 서프 안에 자리한 휴게음식점</p>
+      <a href="https://map.naver.com/p/search/%EA%B3%A0%ED%8A%B8%ED%8E%8D/place/2024397536?c=15.00,0,0,0,dh&amp;placePath=%3Fbk_query%253D%2525EA%2525B3%2525A0%2525ED%25258A%2525B8%2525ED%25258E%25258D%2526entry%253Dbmp" target="_blank" rel="noopener">네이버 플레이스 ↗</a>
+    </div>
+    <div class="f-bottom">
+      <p>© MLP SURF. All rights reserved.</p>
+      <p>만리포에서 시작하는 나의 첫 파도</p>
+    </div>
+  </div>
+</footer>
+
+<!-- TODO-KAKAO: 카카오톡 채널 개설/확인 후 href를 채널 채팅 URL(예: https://pf.kakao.com/_xxxxxx/chat)로 교체 -->
+<a class="kakao-btn" href="#" aria-label="카카오톡으로 문의하기">
+  <span class="tip">카카오톡으로 문의하기</span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.2 4.6 6.6-.2.7-.7 2.6-.8 3-.1.3.2.5.5.4.3-.1 3.2-2.1 4.5-3 .4 0 .8.1 1.2.1 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg>
+</a>
+<a class="dm-btn" href="https://ig.me/m/mlpsurf_official" target="_blank" rel="noopener" aria-label="인스타 DM으로 문의하기">
+  <span class="tip">인스타 DM으로 문의하기</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+</a>
+<button class="top-btn" id="topBtn" type="button" aria-label="맨 위로">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+// TOP 버튼
+(function(){
+  var b=document.getElementById('topBtn'),d=document.querySelector('.dm-btn'),k=document.querySelector('.kakao-btn');
+  function onS(){var s=window.scrollY>400;b.classList.toggle('show',s);if(d)d.classList.toggle('show',s);if(k)k.classList.toggle('show',s);}
+  window.addEventListener('scroll',onS,{passive:true});onS();
+  b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+// 등장 애니메이션
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+// 주소 클릭 복사 + 토스트
+(function(){
+  var toast=document.getElementById('toast'),t;
+  function show(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(t);t=setTimeout(function(){toast.classList.remove('show');},2200);}
+  function copy(text,msg){
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){show(msg);});}
+    else{var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);show(msg);}
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(el){
+    el.addEventListener('click',function(){copy(el.getAttribute('data-copy'),el.getAttribute('data-msg')||'복사되었습니다');});
+  });
+})();
+// 헤더 그림자
+(function(){
+  var h=document.getElementById('header');
+  function onScroll(){h.classList.toggle('scrolled',window.scrollY>10);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+</body>
+</html>
