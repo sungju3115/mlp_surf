@@ -42,6 +42,10 @@ mlp-surf/
 
 확정 완료: GOAT 링크는 고트펍 전용 네이버 플레이스(place/2024397536)로 연결됨 (2026-08-26).
 
+## 관련 프로젝트
+
+- [Wavetone Studio](https://sungju3115.github.io/wavetone_studio/) — 웨이브톤 스튜디오 홈페이지 ([repo](https://github.com/sungju3115/wavetone_studio))
+
 ## 참고 사항
 
 - 데스크톱(1440px) 우선. 모바일 반응형 미적용 — 개발 시 브레이크포인트 추가 필요.
